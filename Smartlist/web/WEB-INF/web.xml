@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <servlet-class>org.smartlist.Controller.IndexServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>org.smartlist.Controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletUpload</servlet-name>
+        <servlet-class>org.smartlist.Controller.ServletUpload</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddToList</servlet-name>
+        <servlet-class>org.smartlist.Controller.AddToList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index</welcome-file>
+    </welcome-file-list>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletUpload</servlet-name>
+        <url-pattern>/ServletUpload</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddToList</servlet-name>
+        <url-pattern>/AddToList</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

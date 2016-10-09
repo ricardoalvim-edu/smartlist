@@ -1,0 +1,38 @@
+\documentclass{beamer}
+\usetheme{Berlin}
+\usecolortheme{crane}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\title{Smartlist}
+\author[Athos, Giliard e Ricardo]{Athos Castro Moreno\\{Giliard Godoi de Almeida}\\{Ricardo Carreiro Alvim}}
+
+\institute{Universidade Tecnológica Federal do Paraná}
+
+\titlegraphic{\includegraphics[scale=0.15]{Imagens/utfpr-logo}}
+
+\date{\today}
+
+\newcommand\FontObrigado{\fontsize{30}{7.2}\selectfont}
+
+\addtobeamertemplate{navigation symbols}{}{%
+	\usebeamerfont{footline}%
+	\usebeamercolor[fg]{footline}%
+	\hspace{1em}%
+	\insertframenumber/\inserttotalframenumber
+}
+
+\begin{document}
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	\include{Slides/tabelaconteudo}
+	\include{Slides/problematizacao}
+	\include{Slides/proposta}
+	\include{Slides/desenvolvimento}
+	\include{Slides/problemas}
+	\include{Slides/tecnologias}
+	\include{Slides/documentacao}
+	\include{Slides/obrigado}
+\end{document}
